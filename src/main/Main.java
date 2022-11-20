@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.CardInput;
 import fileio.GameInput;
 import fileio.Input;
+import logic.GameLogic;
 
 
 import java.io.File;
@@ -80,6 +81,12 @@ public final class Main {
         ArrayNode output = objectMapper.createArrayNode();
 
         //TODO add here the entry point to your implementation
+
+        // my implementation
+//        GameLogic gameLogic = new GameLogic(inputData, output, objectMapper);
+//        gameLogic.playGames();
+
+
         ArrayList<GameInput> games;
         games = inputData.getGames();
 
