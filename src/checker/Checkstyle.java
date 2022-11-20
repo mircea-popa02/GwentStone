@@ -13,6 +13,7 @@ public final class Checkstyle {
     private Checkstyle() {
         //constructor for checkstyle
     }
+
     /**
      * DO NOT MODIFY
      */

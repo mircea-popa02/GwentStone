@@ -80,13 +80,13 @@ public final class ActionsInput {
     @Override
     public String toString() {
         return "ActionsInput{"
-                +  "command='"
+                + "command='"
                 + command + '\''
-                +  ", handIdx="
+                + ", handIdx="
                 + handIdx
-                +  ", cardAttacker="
+                + ", cardAttacker="
                 + cardAttacker
-                +  ", cardAttacked="
+                + ", cardAttacked="
                 + cardAttacked
                 + ", affectedRow="
                 + affectedRow

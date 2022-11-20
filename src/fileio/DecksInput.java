@@ -39,7 +39,7 @@ public final class DecksInput {
         return "InfoInput{"
                 + "nr_cards_in_deck="
                 + nrCardsInDeck
-                +  ", nr_decks="
+                + ", nr_decks="
                 + nrDecks
                 + ", decks="
                 + decks

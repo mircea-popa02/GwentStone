@@ -13,6 +13,7 @@ import fileio.CardInput;
 import fileio.GameInput;
 import fileio.Input;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -36,6 +37,7 @@ public final class Main {
     /**
      * DO NOT MODIFY MAIN METHOD
      * Call the checker
+     *
      * @param args from command line
      * @throws IOException in case of exceptions to reading / writing
      */
@@ -79,7 +81,7 @@ public final class Main {
 
         //TODO add here the entry point to your implementation
         ArrayList<GameInput> games;
-        games =  inputData.getGames();
+        games = inputData.getGames();
 
 
         int deckNumOne;
@@ -203,18 +205,18 @@ public final class Main {
         JsonNode jsonNodeCopy = objectMapper.readTree(json);
         for (int k = 0; k < jsonNodeCopy.size(); k++) {
             if (jsonNodeCopy.get(k).get("name").toString().equals("\"Winterfell\"")) {
-                ((ObjectNode)jsonNodeCopy.get(k)).remove("health");
-                ((ObjectNode)jsonNodeCopy.get(k)).remove("attackDamage");
+                ((ObjectNode) jsonNodeCopy.get(k)).remove("health");
+                ((ObjectNode) jsonNodeCopy.get(k)).remove("attackDamage");
             }
 
             if (jsonNodeCopy.get(k).get("name").toString().equals("\"Firestorm\"")) {
-                ((ObjectNode)jsonNodeCopy.get(k)).remove("health");
-                ((ObjectNode)jsonNodeCopy.get(k)).remove("attackDamage");
+                ((ObjectNode) jsonNodeCopy.get(k)).remove("health");
+                ((ObjectNode) jsonNodeCopy.get(k)).remove("attackDamage");
             }
 
             if (jsonNodeCopy.get(k).get("name").toString().equals("\"Heart Hound\"")) {
-                ((ObjectNode)jsonNodeCopy.get(k)).remove("health");
-                ((ObjectNode)jsonNodeCopy.get(k)).remove("attackDamage");
+                ((ObjectNode) jsonNodeCopy.get(k)).remove("health");
+                ((ObjectNode) jsonNodeCopy.get(k)).remove("attackDamage");
             }
         }
         jsonNode.put("output", jsonNodeCopy);

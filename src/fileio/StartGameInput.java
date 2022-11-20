@@ -68,7 +68,7 @@ public final class StartGameInput {
                 + playerTwoDeckIdx
                 + ", shuffleSeed="
                 + shuffleSeed
-                +  ", playerOneHero="
+                + ", playerOneHero="
                 + playerOneHero
                 + ", playerTwoHero="
                 + playerTwoHero

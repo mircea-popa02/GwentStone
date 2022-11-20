@@ -41,8 +41,8 @@ public final class Input {
                 + playerOneDecks
                 + ", player_two_decks="
                 + playerTwoDecks
-                +  ", games="
+                + ", games="
                 + games
-                +  '}';
+                + '}';
     }
 }

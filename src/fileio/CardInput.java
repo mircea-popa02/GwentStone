@@ -64,19 +64,19 @@ public final class CardInput {
     @Override
     public String toString() {
         return "CardInput{"
-                +  "mana="
+                + "mana="
                 + mana
-                +  ", attackDamage="
+                + ", attackDamage="
                 + attackDamage
                 + ", health="
                 + health
-                +  ", description='"
+                + ", description='"
                 + description
                 + '\''
                 + ", colors="
                 + colors
                 + ", name='"
-                +  ""
+                + ""
                 + name
                 + '\''
                 + '}';
