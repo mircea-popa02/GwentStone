@@ -51,13 +51,13 @@ public class Deck {
         return false;
     }
 
-    public void writeDeckToOutput(ObjectMapper objectMapper, ArrayNode output) throws JsonProcessingException {
+    public ObjectNode writeDeckToOutput(ObjectMapper objectMapper, String instruction) throws JsonProcessingException {
         ObjectNode jsonNode = objectMapper.createObjectNode();
-        jsonNode.put("command", "getPlayerDeck");
+        jsonNode.put("command", instruction);
         jsonNode.put("playerIdx", playerId);
         String json = objectMapper.writeValueAsString(cardArrayList);
         JsonNode jsonNodeCopy = objectMapper.readTree(json);
         jsonNode.put("output", jsonNodeCopy);
-        output.add(jsonNode);
+        return jsonNode;
     }
 }
