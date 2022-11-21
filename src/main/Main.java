@@ -80,52 +80,10 @@ public final class Main {
 
         ArrayNode output = objectMapper.createArrayNode();
 
-        //TODO add here the entry point to your implementation
-
         GameLogic gameLogic = new GameLogic(inputData, output, objectMapper);
         gameLogic.playGames();
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePath2), output);
-    }
-
-    private static void writePlayerHero(ObjectMapper objectMapper, ArrayNode output, ArrayList<GameInput> games, CardInput heroPlayerOne, int i, int j) throws JsonProcessingException {
-        ObjectNode jsonNode = objectMapper.createObjectNode();
-        jsonNode.put("command", "getPlayerHero");
-        jsonNode.put("playerIdx", games.get(i).getActions().get(j).getPlayerIdx());
-        String json = objectMapper.writeValueAsString(heroPlayerOne);
-        JsonNode jsonNodeCopy = objectMapper.readTree(json);
-        ((ObjectNode) jsonNodeCopy).remove("health");
-        ((ObjectNode) jsonNodeCopy).remove("attackDamage");
-        // TODO hardcoded hero health
-        ((ObjectNode) jsonNodeCopy).put("health", 30);
-        jsonNode.put("output", jsonNodeCopy);
-        output.add(jsonNode);
-    }
-
-    private static void writeDeckOutput(ObjectMapper objectMapper, ArrayNode output, ArrayList<GameInput> games, ArrayList<CardInput> chosenDeckPlayer, int i, int j) throws JsonProcessingException {
-        ObjectNode jsonNode = objectMapper.createObjectNode();
-        jsonNode.put("command", "getPlayerDeck");
-        jsonNode.put("playerIdx", games.get(i).getActions().get(j).getPlayerIdx());
-        String json = objectMapper.writeValueAsString(chosenDeckPlayer);
-        JsonNode jsonNodeCopy = objectMapper.readTree(json);
-        for (int k = 0; k < jsonNodeCopy.size(); k++) {
-            if (jsonNodeCopy.get(k).get("name").toString().equals("\"Winterfell\"")) {
-                ((ObjectNode) jsonNodeCopy.get(k)).remove("health");
-                ((ObjectNode) jsonNodeCopy.get(k)).remove("attackDamage");
-            }
-
-            if (jsonNodeCopy.get(k).get("name").toString().equals("\"Firestorm\"")) {
-                ((ObjectNode) jsonNodeCopy.get(k)).remove("health");
-                ((ObjectNode) jsonNodeCopy.get(k)).remove("attackDamage");
-            }
-
-            if (jsonNodeCopy.get(k).get("name").toString().equals("\"Heart Hound\"")) {
-                ((ObjectNode) jsonNodeCopy.get(k)).remove("health");
-                ((ObjectNode) jsonNodeCopy.get(k)).remove("attackDamage");
-            }
-        }
-        jsonNode.put("output", jsonNodeCopy);
-        output.add(jsonNode);
     }
 }
