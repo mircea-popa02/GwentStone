@@ -1,8 +1,35 @@
 [ {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 1,
+    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
+    "colors" : [ "Black", "White" ],
+    "name" : "Sentinel",
+    "health" : 3,
+    "attackDamage" : 6
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 2,
+    "description" : "Premium card: All is white. My mouth is frozen and I must scream.",
+    "colors" : [ "White", "Grey", "Black" ],
+    "name" : "Winterfell"
+  }, {
+    "mana" : 2,
+    "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 5
+  } ]
+}, {
   "command" : "getPlayerHero",
   "playerIdx" : 1,
   "output" : {
-    "mana" : 5,
+    "mana" : 2,
     "description" : "Standard card: Absolute order, a soldier must devote his life to his General.",
     "colors" : [ "Green", "Yellow" ],
     "name" : "General Kocioraw",
@@ -12,7 +39,7 @@
   "command" : "getPlayerHero",
   "playerIdx" : 2,
   "output" : {
-    "mana" : 6,
+    "mana" : 3,
     "description" : "Standard card: Exact precision is her mantra, emotion is for the weak.",
     "colors" : [ "Black", "Red" ],
     "name" : "Empress Thorina",
@@ -36,16 +63,32 @@
   } ]
 }, {
   "command" : "getPlayerMana",
-  "output" : 9,
+  "output" : 7,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 2,
+    "description" : "Premium card: All is white. My mouth is frozen and I must scream.",
+    "colors" : [ "White", "Grey", "Black" ],
+    "name" : "Winterfell"
+  }, {
+    "mana" : 1,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 6
+  } ]
+}, {
   "command" : "getPlayerHero",
   "playerIdx" : 1,
   "output" : {
-    "mana" : 8,
+    "mana" : 2,
     "description" : "Standard card: Absolute order, a soldier must devote his life to his General.",
     "colors" : [ "Green", "Yellow" ],
     "name" : "General Kocioraw",
@@ -55,19 +98,37 @@
   "command" : "getPlayerHero",
   "playerIdx" : 2,
   "output" : {
-    "mana" : 9,
+    "mana" : 3,
     "description" : "Standard card: Exact precision is her mantra, emotion is for the weak.",
     "colors" : [ "Black", "Red" ],
     "name" : "Empress Thorina",
     "health" : 30
   }
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 1,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 6
+  }, {
+    "mana" : 1,
+    "description" : "Standard card: A drink can always be served, with the blood of his enemies.",
+    "colors" : [ "Purple", "Yellow" ],
+    "name" : "Berserker",
+    "health" : 1,
+    "attackDamage" : 5
+  } ]
+}, {
   "command" : "getPlayerMana",
-  "output" : 18,
+  "output" : 16,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 17,
+  "output" : 16,
   "playerIdx" : 1
 }, {
   "command" : "getCardsInHand",

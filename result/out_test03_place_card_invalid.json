@@ -1,4 +1,20 @@
 [ {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 3,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 6
+  }, {
+    "mana" : 1,
+    "description" : "Premium card: All is white. My mouth is frozen and I must scream.",
+    "colors" : [ "White", "Blue" ],
+    "name" : "Winterfell"
+  } ]
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
@@ -43,6 +59,40 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 1,
+    "description" : "Premium card: All is white. My mouth is frozen and I must scream.",
+    "colors" : [ "White", "Blue" ],
+    "name" : "Winterfell"
+  }, {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 4
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 4
+  }, {
+    "mana" : 4,
+    "description" : "Standard card: Death incarnate. No better time to die than now.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 6
+  } ]
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
@@ -82,12 +132,59 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 4
+  }, {
+    "mana" : 3,
+    "description" : "Standard card: A warrior who is never afraid of battle, no matter the costs",
+    "colors" : [ "Brown", "Black", "Grey" ],
+    "name" : "Goliath",
+    "health" : 8,
+    "attackDamage" : 1
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 4
+  }, {
+    "mana" : 3,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Black", "Yellow" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 5
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 4
+  } ]
+}, {
   "command" : "getPlayerMana",
-  "output" : 23,
+  "output" : 22,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 24,
+  "output" : 22,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerTurn",

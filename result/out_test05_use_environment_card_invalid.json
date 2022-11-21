@@ -1,13 +1,120 @@
 [ {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 5
+  }, {
+    "mana" : 3,
+    "description" : "Standard card: A warrior who is never afraid of battle, no matter the costs",
+    "colors" : [ "Red", "Purple" ],
+    "name" : "Goliath",
+    "health" : 8,
+    "attackDamage" : 2
+  } ]
+}, {
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 5
+  }, {
+    "mana" : 4,
+    "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 5
+  }, {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 5
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 5,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 5
+  }, {
+    "mana" : 4,
+    "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 5
+  }, {
+    "mana" : 3,
+    "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+    "colors" : [ "Brown", "Blue" ],
+    "name" : "Warden",
+    "health" : 6,
+    "attackDamage" : 3
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 4,
+    "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 5
+  }, {
+    "mana" : 3,
+    "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+    "colors" : [ "Brown", "Blue" ],
+    "name" : "Warden",
+    "health" : 6,
+    "attackDamage" : 3
+  }, {
+    "mana" : 2,
+    "description" : "Premium card: Your mind is ours. Your body is ours. Stop begging.",
+    "colors" : [ "Red", "White", "Grey" ],
+    "name" : "Heart Hound"
+  } ]
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 3,
+    "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
+    "colors" : [ "Brown", "Blue" ],
+    "name" : "Warden",
+    "health" : 6,
+    "attackDamage" : 3
+  }, {
+    "mana" : 2,
+    "description" : "Premium card: Your mind is ours. Your body is ours. Stop begging.",
+    "colors" : [ "Red", "White", "Grey" ],
+    "name" : "Heart Hound"
+  } ]
+}, {
   "command" : "getPlayerMana",
-  "output" : 38,
+  "output" : 37,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerMana",
-  "output" : 38,
+  "output" : 37,
   "playerIdx" : 2
 }, {
   "command" : "getCardsInHand",

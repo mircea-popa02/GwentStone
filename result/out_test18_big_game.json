@@ -1,6 +1,6 @@
 [ {
   "command" : "getPlayerMana",
-  "output" : 3,
+  "output" : 1,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerTurn",
@@ -11,44 +11,134 @@
 }, {
   "command" : "getPlayerTurn",
   "output" : 1
+}, {
+  "command" : "getPlayerMana",
+  "output" : 2,
+  "playerIdx" : 1
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 2,
+    "description" : "Premium card: Fear him. Your last breath is now.",
+    "colors" : [ "Purple", "Yellow" ],
+    "name" : "Berserker",
+    "health" : 2,
+    "attackDamage" : 2
+  }, {
+    "mana" : 4,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 4,
+    "attackDamage" : 5
+  } ]
+}, {
+  "command" : "getPlayerTurn",
+  "output" : 2
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 4,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 4,
+    "attackDamage" : 5
+  }, {
+    "mana" : 4,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 5
+  } ]
 }, {
   "command" : "getPlayerMana",
   "output" : 4,
-  "playerIdx" : 1
-}, {
-  "command" : "getPlayerTurn",
-  "output" : 2
-}, {
-  "command" : "getPlayerMana",
-  "output" : 6,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 9,
+  "output" : 7,
   "playerIdx" : 1
+}, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 4,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 5
+  }, {
+    "mana" : 3,
+    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+    "colors" : [ "Green", "Yellow", "Blue" ],
+    "name" : "Disciple",
+    "health" : 2,
+    "attackDamage" : 0
+  } ]
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 13,
+  "output" : 11,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 4,
+    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
+    "colors" : [ "Orange", "Red", "Black" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 5
+  }, {
+    "mana" : 4,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 4
+  } ]
+}, {
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 18,
+  "output" : 16,
   "playerIdx" : 1
 }, {
+  "command" : "PLAYER2HAND",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 4,
+    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
+    "colors" : [ "Yellow", "Orange", "Red" ],
+    "name" : "Miraj",
+    "health" : 4,
+    "attackDamage" : 4
+  }, {
+    "mana" : 5,
+    "description" : "Premium card: Insanity is always an option, now it is an absolute.",
+    "colors" : [ "Red", "Black" ],
+    "name" : "Miraj",
+    "health" : 3,
+    "attackDamage" : 4
+  } ]
+}, {
   "command" : "getPlayerMana",
-  "output" : 18,
+  "output" : 16,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerTurn",
