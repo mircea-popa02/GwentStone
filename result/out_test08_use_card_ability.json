@@ -7,13 +7,6 @@
     "colors" : [ "Blue", "Green", "White" ],
     "name" : "Firestorm"
   }, {
-    "mana" : 2,
-    "description" : "Premium card: Nobody suspects an outcast, not even the Gods.",
-    "colors" : [ "Black", "White", "Red" ],
-    "name" : "The Cursed One",
-    "health" : 3,
-    "attackDamage" : 0
-  }, {
     "mana" : 4,
     "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
     "colors" : [ "Yellow", "Orange", "Red" ],
@@ -21,6 +14,10 @@
     "health" : 4,
     "attackDamage" : 5
   } ]
+}, {
+  "command" : "getPlayerMana",
+  "output" : 5,
+  "playerIdx" : 1
 }, {
   "command" : "getPlayerTurn",
   "output" : 1
@@ -33,20 +30,6 @@
     "colors" : [ "Blue", "Green", "White" ],
     "name" : "Firestorm"
   }, {
-    "mana" : 2,
-    "description" : "Premium card: Nobody suspects an outcast, not even the Gods.",
-    "colors" : [ "Black", "White", "Red" ],
-    "name" : "The Cursed One",
-    "health" : 3,
-    "attackDamage" : 0
-  }, {
-    "mana" : 4,
-    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
-    "colors" : [ "Yellow", "Orange", "Red" ],
-    "name" : "Miraj",
-    "health" : 4,
-    "attackDamage" : 5
-  }, {
     "mana" : 3,
     "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
     "colors" : [ "Black", "Yellow" ],
@@ -55,8 +38,20 @@
     "attackDamage" : 5
   } ]
 }, {
+  "command" : "getPlayerMana",
+  "output" : 8,
+  "playerIdx" : 1
+}, {
   "command" : "getPlayerTurn",
   "output" : 1
+}, {
+  "command" : "getPlayerMana",
+  "output" : 17,
+  "playerIdx" : 2
+}, {
+  "command" : "getPlayerMana",
+  "output" : 17,
+  "playerIdx" : 1
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
@@ -64,38 +59,10 @@
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
-    "mana" : 3,
-    "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
-    "colors" : [ "Brown", "Black", "Grey" ],
-    "name" : "Goliath",
-    "health" : 7,
-    "attackDamage" : 2
-  }, {
     "mana" : 1,
     "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
     "colors" : [ "White", "Blue" ],
     "name" : "Winterfell"
-  }, {
-    "mana" : 3,
-    "description" : "Standard card: Death incarnate. No better time to die than now.",
-    "colors" : [ "Black", "Yellow" ],
-    "name" : "The Ripper",
-    "health" : 4,
-    "attackDamage" : 5
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "White" ],
-    "name" : "Sentinel",
-    "health" : 3,
-    "attackDamage" : 2
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
-    "colors" : [ "Black", "White", "Green" ],
-    "name" : "Warden",
-    "health" : 6,
-    "attackDamage" : 3
   }, {
     "mana" : 3,
     "description" : "Standard card: Death incarnate. No better time to die than now.",
@@ -112,34 +79,6 @@
     "description" : "Standard card: The dragon was unleashed, run for your lives.",
     "colors" : [ "Blue", "Green", "White" ],
     "name" : "Firestorm"
-  }, {
-    "mana" : 2,
-    "description" : "Premium card: Nobody suspects an outcast, not even the Gods.",
-    "colors" : [ "Black", "White", "Red" ],
-    "name" : "The Cursed One",
-    "health" : 3,
-    "attackDamage" : 0
-  }, {
-    "mana" : 4,
-    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
-    "colors" : [ "Yellow", "Orange", "Red" ],
-    "name" : "Miraj",
-    "health" : 4,
-    "attackDamage" : 5
-  }, {
-    "mana" : 3,
-    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
-    "colors" : [ "Black", "Yellow" ],
-    "name" : "The Ripper",
-    "health" : 4,
-    "attackDamage" : 5
-  }, {
-    "mana" : 5,
-    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
-    "colors" : [ "Yellow", "Orange", "Red" ],
-    "name" : "Miraj",
-    "health" : 4,
-    "attackDamage" : 5
   }, {
     "mana" : 1,
     "description" : "Standard card: Corruption is easy, you always wanted it, now I help you embrace it.",

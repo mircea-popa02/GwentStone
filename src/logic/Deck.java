@@ -27,9 +27,7 @@ public class Deck {
     ArrayList<GenericCard> cardArrayList = new ArrayList<>();
     int playerId;
 
-    public Deck(int playerId) {
-        this.playerId = playerId;
-    }
+    public Deck() {}
 
 
 
@@ -64,4 +62,5 @@ public class Deck {
         jsonNode.put("output", jsonNodeCopy);
         return jsonNode;
     }
+
 }

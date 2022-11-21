@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.CardInput;
 import fileio.GameInput;
 import fileio.Input;
+import org.checkerframework.checker.units.qual.A;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,17 +29,28 @@ public class GameLogic {
         int rounds = inputData.getGames().size();
         String currentCommand;
 
-        Deck playerOneDeck = new Deck(1);
-        Deck playerTwoDeck = new Deck(2);
+        Deck playerOneDeck = new Deck();
+        playerOneDeck.playerId = 1;
+        Deck playerTwoDeck = new Deck();
+        playerTwoDeck.playerId = 2;
 
-        Deck playerOneHand = new Deck(1);
-        Deck playerTwoHand = new Deck(2);
+        Deck playerOneHand = new Deck();
+        playerOneHand.playerId = 1;
+        Deck playerTwoHand = new Deck();
+        playerTwoHand.playerId = 2;
 
-        ArrayList<ArrayList<GenericCard>> table = new ArrayList<>(5);
+
 
         Hero playerOneHero;
         Hero playerTwoHero;
         for (int i = 0; i < rounds; i++) {
+
+            ArrayList<ArrayList<GenericCard>> table = new ArrayList<ArrayList<GenericCard>>(4);
+            for (int k = 0; k < 4; k++) {
+                table.add(new ArrayList<GenericCard>());
+            }
+            System.out.println(table.size());
+            System.out.println(table.get(0).size());
             // choosing a deck
             int deckNumOne = inputData.getGames().get(i).getStartGame().getPlayerOneDeckIdx();
             int deckNumTwo = inputData.getGames().get(i).getStartGame().getPlayerTwoDeckIdx();
@@ -59,6 +71,7 @@ public class GameLogic {
 
             // adding first card from deck to hand and removing it from deck
             playerOneHand.cardArrayList.add(playerOneDeck.cardArrayList.get(0));
+
             playerOneDeck.cardArrayList.remove(0);
             playerTwoHand.cardArrayList.add(playerTwoDeck.cardArrayList.get(0));
             playerTwoDeck.cardArrayList.remove(0);
@@ -107,11 +120,13 @@ public class GameLogic {
                             // start of new round. adding first card from deck to hand
                             if (playerOneDeck.cardArrayList.size() != 0) {
                                 playerOneHand.cardArrayList.add(playerOneDeck.cardArrayList.get(0));
+
                                 playerOneDeck.cardArrayList.remove(0);
                             }
                             if (playerTwoDeck.cardArrayList.size() != 0) {
                                 playerTwoHand.cardArrayList.add(playerTwoDeck.cardArrayList.get(0));
                                 playerTwoDeck.cardArrayList.remove(0);
+
                             }
                         }
                         if (turn == 1) {
@@ -121,6 +136,7 @@ public class GameLogic {
                         }
                         break;
 
+                        // TODO add placecard
 //                    case "placeCard":
 //                        // Rândurile 0 și 1 sunt asignate jucătorului 2, iar rândurile 2 și 3 sunt asignate jucătorului 1, conform imaginii de mai jos. Rândurile din față vor fi reprezentate de rândurile 1 și 2, iar rândurile din spate vor fi 0 si 3 (jucătorii vor fi așezați față în față). Totodată, eroii jucătorilor vor avea un loc special în care vor fi așezați de la începutul jocului.
 //                        // check if card is environment type and throw error otherwise
@@ -174,6 +190,39 @@ public class GameLogic {
 //                        }
 //                        break;
 
+                    // TODO add errors
+                    case "placeCard":
+                        int cardIndex = inputData.getGames().get(i).getActions().get(j).getHandIdx();
+                        if (turn == 1) {
+                            // player 1
+                            if (cardIndex > playerOneHand.cardArrayList.size() - 1) {
+                                break;
+                            }
+                            if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
+                                table.get(3).add(playerOneHand.cardArrayList.get(cardIndex));
+                                playerOneHand.cardArrayList.remove(cardIndex);
+                            } else {
+                                table.get(2).add(playerOneHand.cardArrayList.get(cardIndex));
+                                playerOneHand.cardArrayList.remove(cardIndex);
+                            }
+//                            output.add(playerOneHand.writeDeckToOutput(objectMapper, "debugHand1 before"));
+
+//                            output.add(playerOneHand.writeDeckToOutput(objectMapper, "debugHand1 after"));
+                        } else {
+                            // player 2
+                            if (cardIndex > playerTwoHand.cardArrayList.size() - 1) {
+                                break;
+                            }
+                            if (isCardOnFrontRow(playerTwoHand.cardArrayList.get(cardIndex)) == true) {
+                                table.get(1).add(playerTwoHand.cardArrayList.get(cardIndex));
+                                playerTwoHand.cardArrayList.remove(cardIndex);
+                            } else {
+                                table.get(0).add(playerTwoHand.cardArrayList.get(cardIndex));
+                                playerTwoHand.cardArrayList.remove(cardIndex);
+                            }
+                        }
+                        break;
+
                     case "getCardsInHand":
                         if (inputData.getGames().get(i).getActions().get(j).getPlayerIdx() == 1) {
                             output.add(playerOneHand.writeDeckToOutput(objectMapper, "getCardsInHand"));
@@ -187,7 +236,7 @@ public class GameLogic {
                         jsonNode = objectMapper.createObjectNode();
                         jsonNode.put("command", "getPlayerMana");
                         if (playerId == 1) {
-                            jsonNode.put("output", playerOneHero.mana;
+                            jsonNode.put("output", playerOneHero.mana);
                         } else {
                             jsonNode.put("output", playerTwoHero.mana);
                         }
