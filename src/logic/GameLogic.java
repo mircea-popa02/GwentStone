@@ -65,6 +65,8 @@ public class GameLogic {
 
             // setting first turn
             int turn = inputData.getGames().get(i).getStartGame().getStartingPlayer();
+            int roundEnd = 0;
+            int givenMana = 1;
 
             // cycling through actions
             for (int j = 0; j < inputData.getGames().get(i).getActions().size(); j++) {
@@ -92,17 +94,45 @@ public class GameLogic {
                         jsonNode.put("output", turn);
                         output.add(jsonNode);
                         break;
+
                     case "endPlayerTurn":
-                        // TODO check if round is over and increment mana accordingly
+                        roundEnd++;
+                        if (roundEnd == 2) {
+                            playerOneHero.mana += givenMana;
+                            playerTwoHero.mana += givenMana;
+                            if (givenMana < 10) {
+                                givenMana++;
+                            }
+                            roundEnd = 0;
+                            // start of new round. adding first card from deck to hand
+                            if (playerOneDeck.cardArrayList.size() != 0) {
+                                playerOneHand.cardArrayList.add(playerOneDeck.cardArrayList.get(0));
+                                playerOneDeck.cardArrayList.remove(0);
+                            }
+                            if (playerTwoDeck.cardArrayList.size() != 0) {
+                                playerTwoHand.cardArrayList.add(playerTwoDeck.cardArrayList.get(0));
+                                playerTwoDeck.cardArrayList.remove(0);
+                            }
+                        }
                         if (turn == 1) {
                             turn = 2;
                         } else if (turn == 2) {
                             turn = 1;
                         }
+                        jsonNode = objectMapper.createObjectNode();
+                        jsonNode.put("command", "endPlayerTurn");
+                        output.add(jsonNode);
                         break;
 
                     case "placeCard":
+                        // Rândurile 0 și 1 sunt asignate jucătorului 2, iar rândurile 2 și 3 sunt asignate jucătorului 1, conform imaginii de mai jos. Rândurile din față vor fi reprezentate de rândurile 1 și 2, iar rândurile din spate vor fi 0 si 3 (jucătorii vor fi așezați față în față). Totodată, eroii jucătorilor vor avea un loc special în care vor fi așezați de la începutul jocului.
+                        // check if card is environment type and throw error otherwise
+                        
+                        // not enough mana
+
+                        // cannot place card on table since row is full
                         break;
+
                     case "getCardsInHand":
                         if (inputData.getGames().get(i).getActions().get(j).getPlayerIdx() == 1) {
                             output.add(playerOneHand.writeDeckToOutput(objectMapper, "getCardsInHand"));
