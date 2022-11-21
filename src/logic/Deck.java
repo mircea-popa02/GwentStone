@@ -24,11 +24,8 @@ import java.util.Objects;
 import java.util.Random;
 
 public class Deck {
-    ArrayList<GenericCard> cardArrayList = new ArrayList<>();
+    public ArrayList<GenericCard> cardArrayList = new ArrayList<>();
     int playerId;
-
-    public Deck() {}
-
 
 
     void addToDeck(ArrayList<CardInput> cardInput) {
@@ -44,11 +41,18 @@ public class Deck {
         }
     }
 
+
     boolean isEnvironment(CardInput card) {
         if (card.getName().equals("Firestorm") || card.getName().equals("Winterfell") || card.getName().equals("Heart Hound")) {
             return true;
         }
         return false;
+    }
+
+    int getMana(int index, ObjectMapper objectMapper) throws JsonProcessingException {
+        String json = objectMapper.writeValueAsString(cardArrayList.get(index));
+        JsonNode jsonNodeCopy = objectMapper.readTree(json);
+        return Integer.parseInt(jsonNodeCopy.get("mana").toString());
     }
 
 

@@ -1,38 +1,4 @@
 [ {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 3,
-    "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
-    "colors" : [ "Yellow", "White" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  }, {
-    "mana" : 1,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "Grey", "Blue" ],
-    "name" : "Sentinel",
-    "health" : 3,
-    "attackDamage" : 2
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 1,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "Grey", "Blue" ],
-    "name" : "Sentinel",
-    "health" : 3,
-    "attackDamage" : 2
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
-    "colors" : [ "White", "Grey", "Black" ],
-    "name" : "Winterfell"
-  } ]
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
@@ -50,34 +16,18 @@
   } ]
 }, {
   "command" : "getPlayerMana",
-  "output" : 7,
+  "output" : 6,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
-    "colors" : [ "White", "Grey", "Black" ],
-    "name" : "Winterfell"
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: Thrown from the highest cliff, revenge will be his glory.",
-    "colors" : [ "Black", "White", "Red" ],
-    "name" : "The Cursed One",
-    "health" : 3,
-    "attackDamage" : 0
-  } ]
-}, {
   "command" : "getPlayerMana",
-  "output" : 16,
+  "output" : 15,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 16,
+  "output" : 14,
   "playerIdx" : 1
 }, {
   "command" : "getCardsInHand",

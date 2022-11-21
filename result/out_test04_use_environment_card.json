@@ -1,60 +1,10 @@
 [ {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Standard card: A drink can always be served, with the blood of his enemies.",
-    "colors" : [ "Red", "Blue", "Pink" ],
-    "name" : "Berserker",
-    "health" : 1,
-    "attackDamage" : 2
-  }, {
-    "mana" : 2,
-    "description" : "Premium card: Fear him. Your last breath is now.",
-    "colors" : [ "Purple", "Yellow" ],
-    "name" : "Berserker",
-    "health" : 2,
-    "attackDamage" : 3
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Premium card: Fear him. Your last breath is now.",
-    "colors" : [ "Purple", "Yellow" ],
-    "name" : "Berserker",
-    "health" : 2,
-    "attackDamage" : 3
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
-    "colors" : [ "White", "Grey", "Black" ],
-    "name" : "Winterfell"
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
-    "colors" : [ "White", "Grey", "Black" ],
-    "name" : "Winterfell"
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "Grey", "Blue" ],
-    "name" : "Sentinel",
-    "health" : 3,
-    "attackDamage" : 1
-  } ]
-}, {
   "command" : "getPlayerMana",
-  "output" : 16,
+  "output" : 17,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerMana",
-  "output" : 16,
+  "output" : 15,
   "playerIdx" : 2
 }, {
   "command" : "getCardsInHand",

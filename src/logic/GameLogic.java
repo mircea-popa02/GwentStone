@@ -8,8 +8,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.CardInput;
 import fileio.GameInput;
 import fileio.Input;
-import jdk.internal.org.jline.utils.OSUtils;
-import org.checkerframework.checker.units.qual.A;
 
 import java.io.ObjectOutput;
 import java.util.ArrayList;
@@ -41,10 +39,10 @@ public class GameLogic {
         Deck playerTwoHand = new Deck();
         playerTwoHand.playerId = 2;
 
-
-
         Hero playerOneHero;
         Hero playerTwoHero;
+
+        int mana;
         for (int i = 0; i < rounds; i++) {
 
             ArrayList<ArrayList<GenericCard>> table = new ArrayList<ArrayList<GenericCard>>(4);
@@ -82,15 +80,13 @@ public class GameLogic {
 
             PlayerMana playerMana = new PlayerMana();
 
-            // TODO fix mana (hero mana is different from player mana)
-
-
             // cycling through actions
             for (int j = 0; j < inputData.getGames().get(i).getActions().size(); j++) {
                 currentCommand = inputData.getGames().get(i).getActions().get(j).getCommand();
                 switch (currentCommand) {
                     case "getPlayerDeck":
                         if (inputData.getGames().get(i).getActions().get(j).getPlayerIdx() == 1) {
+
                             output.add(playerOneDeck.writeDeckToOutput(objectMapper, "getPlayerDeck"));
                             break;
                         }
@@ -116,11 +112,12 @@ public class GameLogic {
                         roundEnd++;
                         // check if round is over and add mana accordingly
                         if (roundEnd == 2) {
-                            playerMana.playerOneMana += playerMana.givenMana;
-                            playerMana.playerTwoMana += playerMana.givenMana;
                             if (playerMana.givenMana < 10) {
                                 playerMana.givenMana++;
                             }
+                            playerMana.playerOneMana += playerMana.givenMana;
+                            playerMana.playerTwoMana += playerMana.givenMana;
+
                             roundEnd = 0;
                             // start of new round. adding first card from deck to hand
                             if (playerOneDeck.cardArrayList.size() != 0) {
@@ -197,37 +194,42 @@ public class GameLogic {
                         int cardIndex = inputData.getGames().get(i).getActions().get(j).getHandIdx();
                         if (turn == 1) {
                             // player 1
+
                             if (cardIndex > playerOneHand.cardArrayList.size() - 1) {
                                 break;
                             }
                             if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
                                 table.get(3).add(playerOneHand.cardArrayList.get(cardIndex));
-                                playerMana.playerOneMana -= playerOneHand.cardArrayList.get(cardIndex).mana;
+                                System.out.println(playerOneHand.getMana(cardIndex, objectMapper) + " 1");
+                                playerMana.playerOneMana -= playerOneHand.getMana(cardIndex, objectMapper);
                                 playerOneHand.cardArrayList.remove(cardIndex);
+
                             } else {
                                 table.get(2).add(playerOneHand.cardArrayList.get(cardIndex));
-                                playerMana.playerOneMana -= playerOneHand.cardArrayList.get(cardIndex).mana;
+                                System.out.println(playerOneHand.getMana(cardIndex, objectMapper) + " 1");
+                                playerMana.playerOneMana -= playerOneHand.getMana(cardIndex, objectMapper);
                                 playerOneHand.cardArrayList.remove(cardIndex);
+
                             }
                         } else {
                             // player 2
+
                             if (cardIndex > playerTwoHand.cardArrayList.size() - 1) {
                                 break;
                             }
+                            // TODO check whether if condition does anything (see invalid tests)
                             if (isCardOnFrontRow(playerTwoHand.cardArrayList.get(cardIndex)) == true) {
+                                System.out.println(playerTwoHand.getMana(cardIndex, objectMapper) + " 2");
                                 table.get(1).add(playerTwoHand.cardArrayList.get(cardIndex));
-
-                                playerMana.playerTwoMana -= playerTwoHand.cardArrayList.get(cardIndex).mana;
-
+                                playerMana.playerTwoMana -= playerTwoHand.getMana(cardIndex, objectMapper);
                                 playerTwoHand.cardArrayList.remove(cardIndex);
+
                             } else {
                                 table.get(0).add(playerTwoHand.cardArrayList.get(cardIndex));
-                                System.out.println(playerMana.playerTwoMana + "before");
-                                //TODO deck mana is null bug
-                                System.out.println(playerTwoHand.cardArrayList.get(cardIndex).mana + " de scazut");
-                                playerMana.playerTwoMana = playerMana.playerTwoMana - playerTwoHand.cardArrayList.get(cardIndex).mana;
-                                System.out.println(playerMana.playerTwoMana + "after");
+                                System.out.println(playerTwoHand.getMana(cardIndex, objectMapper) + " 2");
+                                playerMana.playerTwoMana -= playerTwoHand.getMana(cardIndex, objectMapper);
                                 playerTwoHand.cardArrayList.remove(cardIndex);
+
                             }
                         }
                         break;

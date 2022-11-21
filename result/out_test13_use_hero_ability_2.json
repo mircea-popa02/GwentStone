@@ -1,46 +1,13 @@
 [ {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 1,
-    "description" : "Premium card: Fear him. Your last breath is now.",
-    "colors" : [ "Red", "Blue", "Pink" ],
-    "name" : "Berserker",
-    "health" : 2,
-    "attackDamage" : 6
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 1,
-    "description" : "Premium card: You shall not pass, you shall not prevail, you shall perish.",
-    "colors" : [ "Brown", "Blue" ],
-    "name" : "Warden",
-    "health" : 6,
-    "attackDamage" : 8
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Premium card: Ravished by the winds of hell, no soul is to be forgiven.",
-    "colors" : [ "Black", "Yellow" ],
-    "name" : "The Ripper",
-    "health" : 4,
-    "attackDamage" : 5
-  } ]
-}, {
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
   "command" : "getPlayerMana",
-  "output" : 7,
+  "output" : 6,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerMana",
-  "output" : 7,
+  "output" : 6,
   "playerIdx" : 2
 }, {
   "command" : "getCardsInHand",

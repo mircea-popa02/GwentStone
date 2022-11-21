@@ -3,10 +3,10 @@ package logic;
 import java.util.ArrayList;
 
 public class GenericCard {
-    int mana;
-    String description;
-    ArrayList<String> colors;
-    String name;
+    public int mana;
+    public String description;
+    public ArrayList<String> colors;
+    public String name;
 
     public GenericCard() {}
 }

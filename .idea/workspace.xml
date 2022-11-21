@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b01603cf-020f-4a69-a387-0f7a6255cf37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/PlayerMana.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logic/PlayerMana.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GwentStone/logic/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/Deck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GwentStone/logic/GameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/GameLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GwentStone/logic/GenericCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/GenericCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/out_test02_place_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test02_place_card.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/out_test03_place_card_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test03_place_card_invalid.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/out_test04_use_environment_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test04_use_environment_card.json" afterDir="false" />
@@ -24,7 +24,9 @@
       <change beforePath="$PROJECT_DIR$/result/out_test16_multiple_games_valid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test16_multiple_games_valid.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/out_test17_multiple_games_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test17_multiple_games_invalid.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/out_test18_big_game.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test18_big_game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/GenericCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/GenericCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <workItem from="1668969903470" duration="13000" />
       <workItem from="1668969927694" duration="9887000" />
       <workItem from="1669041991742" duration="5473000" />
-      <workItem from="1669052152046" duration="6315000" />
+      <workItem from="1669052152046" duration="10729000" />
     </task>
     <servers />
   </component>

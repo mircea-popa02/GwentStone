@@ -1,22 +1,4 @@
 [ {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 3,
-    "description" : "Standard card: He has seen everything, his mind has never been asleep since the making of the realm.",
-    "colors" : [ "Black", "White", "Green" ],
-    "name" : "Warden",
-    "health" : 6,
-    "attackDamage" : 3
-  }, {
-    "mana" : 4,
-    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
-    "colors" : [ "Yellow", "Orange", "Red" ],
-    "name" : "Miraj",
-    "health" : 4,
-    "attackDamage" : 4
-  } ]
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
@@ -56,42 +38,6 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 4,
-    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
-    "colors" : [ "Yellow", "Orange", "Red" ],
-    "name" : "Miraj",
-    "health" : 4,
-    "attackDamage" : 4
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 2,
-    "attackDamage" : 0
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 4,
-    "description" : "Standard card: When he is near, close your eyes. They betray your mind.",
-    "colors" : [ "Yellow", "Orange", "Red" ],
-    "name" : "Miraj",
-    "health" : 4,
-    "attackDamage" : 4
-  }, {
-    "mana" : 3,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  } ]
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
@@ -124,30 +70,12 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 3,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  }, {
-    "mana" : 2,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "White" ],
-    "name" : "Sentinel",
-    "health" : 3,
-    "attackDamage" : 1
-  } ]
-}, {
   "command" : "getPlayerMana",
-  "output" : 16,
+  "output" : 9,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 16,
+  "output" : 11,
   "playerIdx" : 1
 }, {
   "command" : "getPlayerTurn",

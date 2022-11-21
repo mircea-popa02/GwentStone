@@ -1,105 +1,13 @@
 [ {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  }, {
-    "mana" : 1,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "Grey", "Blue" ],
-    "name" : "Sentinel",
-    "health" : 2,
-    "attackDamage" : 1
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  }, {
-    "mana" : 3,
-    "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
-    "colors" : [ "Yellow", "White" ],
-    "name" : "Disciple",
-    "health" : 2,
-    "attackDamage" : 0
-  } ]
-}, {
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  }, {
-    "mana" : 3,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
-    "colors" : [ "Green", "Yellow", "Blue" ],
-    "name" : "Disciple",
-    "health" : 4,
-    "attackDamage" : 0
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 1,
-    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
-    "colors" : [ "Black", "Grey", "Blue" ],
-    "name" : "Sentinel",
-    "health" : 3,
-    "attackDamage" : 1
-  } ]
-}, {
-  "command" : "PLAYER2HAND",
-  "playerIdx" : 2,
-  "output" : [ {
-    "mana" : 2,
-    "description" : "Standard card: The dragon was unleashed, run for your lives.",
-    "colors" : [ "Red", "Yellow" ],
-    "name" : "Firestorm"
-  }, {
-    "mana" : 4,
-    "description" : "Standard card: Death incarnate. No better time to die than now.",
-    "colors" : [ "Orange", "Red", "Black" ],
-    "name" : "The Ripper",
-    "health" : 3,
-    "attackDamage" : 6
-  } ]
-}, {
   "command" : "getPlayerMana",
-  "output" : 29,
+  "output" : 22,
   "playerIdx" : 2
 }, {
   "command" : "getPlayerMana",
-  "output" : 29,
+  "output" : 21,
   "playerIdx" : 1
 }, {
   "command" : "getCardsInHand",
