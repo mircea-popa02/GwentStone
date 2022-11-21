@@ -121,60 +121,58 @@ public class GameLogic {
                         }
                         break;
 
-                    case "placeCard":
-                        // Rândurile 0 și 1 sunt asignate jucătorului 2, iar rândurile 2 și 3 sunt asignate jucătorului 1, conform imaginii de mai jos. Rândurile din față vor fi reprezentate de rândurile 1 și 2, iar rândurile din spate vor fi 0 si 3 (jucătorii vor fi așezați față în față). Totodată, eroii jucătorilor vor avea un loc special în care vor fi așezați de la începutul jocului.
-                        // check if card is environment type and throw error otherwise
-                        int cardIndex = inputData.getGames().get(i).getActions().get(j).getHandIdx();
-                        if (turn == 1) {
-                            // checking if card is of type environment
-                            if (isGenericEnvironment(playerOneHand.cardArrayList.get(cardIndex)) == false) {
-                                // error not enough mana
-                                if (playerOneHand.cardArrayList.get(cardIndex).mana > playerOneHero.mana) {
-                                    jsonNode = objectMapper.createObjectNode();
-                                    jsonNode.put("command", "placeCard");
-                                    jsonNode.put("handIdx", cardIndex);
-                                    jsonNode.put("error", "Not enough mana to place card on table.");
-                                    output.add(jsonNode);
-                                } else {
-                                    if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
-                                        // check if there is room for another card else throw error
-                                        if (table.get(2).size() <= 4) {
-                                            // add card to row
-                                            table.get(2).add(playerOneHand.cardArrayList.get(cardIndex));
-                                            playerOneHand.cardArrayList.remove(cardIndex);
-                                        } else {
-                                            jsonNode = objectMapper.createObjectNode();
-                                            jsonNode.put("command", "placeCard");
-                                            jsonNode.put("handIdx", cardIndex);
-                                            jsonNode.put("error", "Cannot place card on table since row is full.");
-                                            output.add(jsonNode);
-                                        }
-                                    }
-                                    if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
-                                        if (table.get(3).size() <= 4) {
-                                            table.get(3).add(playerOneHand.cardArrayList.get(cardIndex));
-                                            playerOneHand.cardArrayList.remove(cardIndex);
-                                        } else {
-                                            jsonNode = objectMapper.createObjectNode();
-                                            jsonNode.put("command", "placeCard");
-                                            jsonNode.put("handIdx", cardIndex);
-                                            jsonNode.put("error", "Cannot place card on table since row is full.");
-                                            output.add(jsonNode);
-                                        }
-                                    }
-                                }
-                            } else {
-                                // error card is env
-                                jsonNode = objectMapper.createObjectNode();
-                                jsonNode.put("command", "placeCard");
-                                jsonNode.put("handIdx", cardIndex);
-                                jsonNode.put("error", "Cannot place environment card on table.");
-                                output.add(jsonNode);
-                            }
-                        }
-
-                        
-                        break;
+//                    case "placeCard":
+//                        // Rândurile 0 și 1 sunt asignate jucătorului 2, iar rândurile 2 și 3 sunt asignate jucătorului 1, conform imaginii de mai jos. Rândurile din față vor fi reprezentate de rândurile 1 și 2, iar rândurile din spate vor fi 0 si 3 (jucătorii vor fi așezați față în față). Totodată, eroii jucătorilor vor avea un loc special în care vor fi așezați de la începutul jocului.
+//                        // check if card is environment type and throw error otherwise
+//                        int cardIndex = inputData.getGames().get(i).getActions().get(j).getHandIdx();
+//                        if (turn == 1) {
+//                            // checking if card is of type environment
+//                            if (isGenericEnvironment(playerOneHand.cardArrayList.get(cardIndex)) == false) {
+//                                // error not enough mana
+//                                if (playerOneHand.cardArrayList.get(cardIndex).mana > playerOneHero.mana) {
+//                                    jsonNode = objectMapper.createObjectNode();
+//                                    jsonNode.put("command", "placeCard");
+//                                    jsonNode.put("handIdx", cardIndex);
+//                                    jsonNode.put("error", "Not enough mana to place card on table.");
+//                                    output.add(jsonNode);
+//                                } else {
+//                                    if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
+//                                        // check if there is room for another card else throw error
+//                                        if (table.get(2).size() <= 4) {
+//                                            // add card to row
+//                                            table.get(2).add(playerOneHand.cardArrayList.get(cardIndex));
+//                                            playerOneHand.cardArrayList.remove(cardIndex);
+//                                        } else {
+//                                            jsonNode = objectMapper.createObjectNode();
+//                                            jsonNode.put("command", "placeCard");
+//                                            jsonNode.put("handIdx", cardIndex);
+//                                            jsonNode.put("error", "Cannot place card on table since row is full.");
+//                                            output.add(jsonNode);
+//                                        }
+//                                    }
+//                                    if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
+//                                        if (table.get(3).size() <= 4) {
+//                                            table.get(3).add(playerOneHand.cardArrayList.get(cardIndex));
+//                                            playerOneHand.cardArrayList.remove(cardIndex);
+//                                        } else {
+//                                            jsonNode = objectMapper.createObjectNode();
+//                                            jsonNode.put("command", "placeCard");
+//                                            jsonNode.put("handIdx", cardIndex);
+//                                            jsonNode.put("error", "Cannot place card on table since row is full.");
+//                                            output.add(jsonNode);
+//                                        }
+//                                    }
+//                                }
+//                            } else {
+//                                // error card is env
+//                                jsonNode = objectMapper.createObjectNode();
+//                                jsonNode.put("command", "placeCard");
+//                                jsonNode.put("handIdx", cardIndex);
+//                                jsonNode.put("error", "Cannot place environment card on table.");
+//                                output.add(jsonNode);
+//                            }
+//                        }
+//                        break;
 
                     case "getCardsInHand":
                         if (inputData.getGames().get(i).getActions().get(j).getPlayerIdx() == 1) {
@@ -183,6 +181,20 @@ public class GameLogic {
                         }
                         output.add(playerTwoHand.writeDeckToOutput(objectMapper, "getCardsInHand"));
                         break;
+
+                    case "getPlayerMana":
+                        int playerId = inputData.getGames().get(i).getActions().get(j).getPlayerIdx();
+                        jsonNode = objectMapper.createObjectNode();
+                        jsonNode.put("command", "getPlayerMana");
+                        if (playerId == 1) {
+                            jsonNode.put("output", playerOneHero.mana;
+                        } else {
+                            jsonNode.put("output", playerTwoHero.mana);
+                        }
+                        jsonNode.put("playerIdx", playerId);
+                        output.add(jsonNode);
+                        break;
+
                 }
             }
         }

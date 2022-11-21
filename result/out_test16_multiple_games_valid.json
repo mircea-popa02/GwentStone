@@ -1,24 +1,12 @@
 [ {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getPlayerTurn",
   "output" : 1
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getPlayerTurn",
   "output" : 2
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
@@ -85,23 +73,11 @@
   "command" : "getPlayerTurn",
   "output" : 1
 }, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getPlayerTurn",
   "output" : 1
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 1,

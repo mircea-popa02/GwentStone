@@ -1,12 +1,4 @@
 [ {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getCardsInHand",
   "playerIdx" : 1,
   "output" : [ {
@@ -52,10 +44,6 @@
     "name" : "Lord Royce",
     "health" : 30
   }
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 1,

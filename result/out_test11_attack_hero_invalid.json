@@ -1,14 +1,4 @@
 [ {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
   "command" : "getPlayerHero",
   "playerIdx" : 1,
   "output" : {
@@ -28,8 +18,6 @@
     "name" : "Empress Thorina",
     "health" : 30
   }
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
@@ -83,14 +71,6 @@
     "name" : "Empress Thorina",
     "health" : 30
   }
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
-}, {
-  "command" : "endPlayerTurn"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
