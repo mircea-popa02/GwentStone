@@ -16,6 +16,8 @@
   "output" : 1,
   "playerIdx" : 2
 }, {
+  "command" : "getCardsOnTable"
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ ]
@@ -69,6 +71,8 @@
 }, {
   "command" : "getPlayerTurn",
   "output" : 1
+}, {
+  "command" : "getCardsOnTable"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 1,

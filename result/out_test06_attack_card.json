@@ -35,6 +35,8 @@
   "command" : "getPlayerTurn",
   "output" : 2
 }, {
+  "command" : "getCardsOnTable"
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {

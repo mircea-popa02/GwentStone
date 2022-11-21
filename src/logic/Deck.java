@@ -41,7 +41,6 @@ public class Deck {
         }
     }
 
-
     boolean isEnvironment(CardInput card) {
         if (card.getName().equals("Firestorm") || card.getName().equals("Winterfell") || card.getName().equals("Heart Hound")) {
             return true;
@@ -53,6 +52,12 @@ public class Deck {
         String json = objectMapper.writeValueAsString(cardArrayList.get(index));
         JsonNode jsonNodeCopy = objectMapper.readTree(json);
         return Integer.parseInt(jsonNodeCopy.get("mana").toString());
+    }
+
+    String getName(int index, ObjectMapper objectMapper) throws JsonProcessingException {
+        String json = objectMapper.writeValueAsString(cardArrayList.get(index));
+        JsonNode jsonNodeCopy = objectMapper.readTree(json);
+        return jsonNodeCopy.get("name").toString();
     }
 
 

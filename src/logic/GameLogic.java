@@ -194,42 +194,37 @@ public class GameLogic {
                         int cardIndex = inputData.getGames().get(i).getActions().get(j).getHandIdx();
                         if (turn == 1) {
                             // player 1
-
                             if (cardIndex > playerOneHand.cardArrayList.size() - 1) {
                                 break;
                             }
+                            System.out.println(playerOneHand.getName(cardIndex, objectMapper));
                             if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
                                 table.get(3).add(playerOneHand.cardArrayList.get(cardIndex));
-                                System.out.println(playerOneHand.getMana(cardIndex, objectMapper) + " 1");
                                 playerMana.playerOneMana -= playerOneHand.getMana(cardIndex, objectMapper);
                                 playerOneHand.cardArrayList.remove(cardIndex);
 
                             } else {
                                 table.get(2).add(playerOneHand.cardArrayList.get(cardIndex));
-                                System.out.println(playerOneHand.getMana(cardIndex, objectMapper) + " 1");
                                 playerMana.playerOneMana -= playerOneHand.getMana(cardIndex, objectMapper);
                                 playerOneHand.cardArrayList.remove(cardIndex);
 
                             }
                         } else {
                             // player 2
-
                             if (cardIndex > playerTwoHand.cardArrayList.size() - 1) {
                                 break;
                             }
                             // TODO check whether if condition does anything (see invalid tests)
+                            System.out.println(playerTwoHand.getName(cardIndex, objectMapper));
                             if (isCardOnFrontRow(playerTwoHand.cardArrayList.get(cardIndex)) == true) {
-                                System.out.println(playerTwoHand.getMana(cardIndex, objectMapper) + " 2");
                                 table.get(1).add(playerTwoHand.cardArrayList.get(cardIndex));
                                 playerMana.playerTwoMana -= playerTwoHand.getMana(cardIndex, objectMapper);
                                 playerTwoHand.cardArrayList.remove(cardIndex);
 
                             } else {
                                 table.get(0).add(playerTwoHand.cardArrayList.get(cardIndex));
-                                System.out.println(playerTwoHand.getMana(cardIndex, objectMapper) + " 2");
                                 playerMana.playerTwoMana -= playerTwoHand.getMana(cardIndex, objectMapper);
                                 playerTwoHand.cardArrayList.remove(cardIndex);
-
                             }
                         }
                         break;
@@ -255,6 +250,11 @@ public class GameLogic {
                         output.add(jsonNode);
                         break;
 
+                    case "getCardsOnTable":
+                        jsonNode = objectMapper.createObjectNode();
+                        jsonNode.put("command", "getCardsOnTable");
+                        output.add(jsonNode);
+                        break;
                 }
             }
         }
@@ -300,4 +300,6 @@ public class GameLogic {
         }
         return false;
     }
+
+    public void getCardsOnTable(ObjectMapper objectMapper, ArrayNode output) {}
 }

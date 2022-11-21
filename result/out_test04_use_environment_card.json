@@ -7,6 +7,8 @@
   "output" : 15,
   "playerIdx" : 2
 }, {
+  "command" : "getCardsOnTable"
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 1,
   "output" : [ {

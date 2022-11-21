@@ -24,6 +24,8 @@
   "output" : 5,
   "playerIdx" : 1
 }, {
+  "command" : "getCardsOnTable"
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
@@ -76,6 +78,8 @@
   "command" : "getPlayerMana",
   "output" : 7,
   "playerIdx" : 2
+}, {
+  "command" : "getCardsOnTable"
 }, {
   "command" : "getCardsInHand",
   "playerIdx" : 1,

@@ -10,6 +10,8 @@
   "output" : 7,
   "playerIdx" : 1
 }, {
+  "command" : "getCardsOnTable"
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {
