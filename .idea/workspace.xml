@@ -4,25 +4,11 @@
     <list default="true" id="b01603cf-020f-4a69-a387-0f7a6255cf37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GwentStone/logic/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/Deck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GwentStone/logic/GameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/GameLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GwentStone/logic/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GwentStone/logic/Table.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/out_test02_place_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test02_place_card.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test03_place_card_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test03_place_card_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test04_use_environment_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test04_use_environment_card.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test05_use_environment_card_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test05_use_environment_card_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test06_attack_card.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test06_attack_card.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test07_attack_card_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test07_attack_card_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test08_use_card_ability.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test08_use_card_ability.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test09_use_card_ability_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test09_use_card_ability_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test10_attack_hero.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test10_attack_hero.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test11_attack_hero_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test11_attack_hero_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test12_use_hero_ability_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test12_use_hero_ability_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test13_use_hero_ability_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test13_use_hero_ability_2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test14_use_hero_ability_1_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test14_use_hero_ability_1_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test15_use_hero_ability_2_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test15_use_hero_ability_2_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test16_multiple_games_valid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test16_multiple_games_valid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test17_multiple_games_invalid.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test17_multiple_games_invalid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/out_test18_big_game.json" beforeDir="false" afterPath="$PROJECT_DIR$/result/out_test18_big_game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Table.java" afterDir="false" />
     </list>
@@ -41,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2Hp6uI8z6SGfa2itTnbPpjLXJ6F" />
   <component name="ProjectLevelVcsManager">
@@ -91,7 +85,7 @@
       <updated>1668969902882</updated>
       <workItem from="1668969903470" duration="13000" />
       <workItem from="1668969927694" duration="9887000" />
-      <workItem from="1669041991742" duration="1257000" />
+      <workItem from="1669041991742" duration="5473000" />
     </task>
     <servers />
   </component>

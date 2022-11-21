@@ -31,6 +31,8 @@ public class Deck {
         this.playerId = playerId;
     }
 
+
+
     void addToDeck(ArrayList<CardInput> cardInput) {
         for (int i = 0; i < cardInput.size(); i++) {
             GenericCard card;
@@ -50,6 +52,8 @@ public class Deck {
         }
         return false;
     }
+
+
 
     public ObjectNode writeDeckToOutput(ObjectMapper objectMapper, String instruction) throws JsonProcessingException {
         ObjectNode jsonNode = objectMapper.createObjectNode();
