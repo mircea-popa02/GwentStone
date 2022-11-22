@@ -32,6 +32,46 @@
 }, {
   "command" : "getCardsOnTable"
 }, {
+  "output" : [ [ {
+    "mana" : 3,
+    "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
+    "colors" : [ "Yellow", "White" ],
+    "name" : "Disciple",
+    "health" : 4,
+    "attackDamage" : 0
+  }, {
+    "mana" : 1,
+    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
+    "colors" : [ "Black", "Grey", "Blue" ],
+    "name" : "Sentinel",
+    "health" : 3,
+    "attackDamage" : 2
+  }, {
+    "mana" : 2,
+    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+    "colors" : [ "White", "Grey", "Black" ],
+    "name" : "Winterfell"
+  } ], [ ], [ {
+    "mana" : 2,
+    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+    "colors" : [ "Yellow", "White" ],
+    "name" : "Disciple",
+    "health" : 4,
+    "attackDamage" : 0
+  }, {
+    "mana" : 1,
+    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+    "colors" : [ "White", "Blue" ],
+    "name" : "Winterfell"
+  }, {
+    "mana" : 4,
+    "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
+    "colors" : [ "Red", "Purple" ],
+    "name" : "Goliath",
+    "health" : 7,
+    "attackDamage" : 2
+  } ], [ ] ]
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {

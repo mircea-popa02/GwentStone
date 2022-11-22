@@ -12,6 +12,36 @@
 }, {
   "command" : "getCardsOnTable"
 }, {
+  "output" : [ [ {
+    "mana" : 1,
+    "description" : "Standard card: Death incarnate. No better time to die than now.",
+    "colors" : [ "Black", "Yellow" ],
+    "name" : "The Ripper",
+    "health" : 3,
+    "attackDamage" : 6
+  }, {
+    "mana" : 1,
+    "description" : "Premium card: Fear him. Your last breath is now.",
+    "colors" : [ "Red", "Blue", "Pink" ],
+    "name" : "Berserker",
+    "health" : 1,
+    "attackDamage" : 6
+  } ], [ ], [ {
+    "mana" : 1,
+    "description" : "Standard card: Thrown from the highest cliff, revenge will be his glory.",
+    "colors" : [ "Pink", "Purple" ],
+    "name" : "The Cursed One",
+    "health" : 1,
+    "attackDamage" : 0
+  }, {
+    "mana" : 2,
+    "description" : "Standard card: Thrown from the highest cliff, revenge will be his glory.",
+    "colors" : [ "Black", "White", "Red" ],
+    "name" : "The Cursed One",
+    "health" : 1,
+    "attackDamage" : 0
+  } ], [ ] ]
+}, {
   "command" : "getCardsInHand",
   "playerIdx" : 2,
   "output" : [ {

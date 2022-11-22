@@ -197,17 +197,18 @@ public class GameLogic {
                             if (cardIndex > playerOneHand.cardArrayList.size() - 1) {
                                 break;
                             }
-                            System.out.println(playerOneHand.getName(cardIndex, objectMapper));
                             if (isCardOnFrontRow(playerOneHand.cardArrayList.get(cardIndex)) == true) {
+                                System.out.println(playerOneHand.getName(cardIndex, objectMapper) + " firstrow");
                                 table.get(3).add(playerOneHand.cardArrayList.get(cardIndex));
                                 playerMana.playerOneMana -= playerOneHand.getMana(cardIndex, objectMapper);
                                 playerOneHand.cardArrayList.remove(cardIndex);
 
                             } else {
+                                System.out.println(playerOneHand.getName(cardIndex, objectMapper) + " secondrow");
                                 table.get(2).add(playerOneHand.cardArrayList.get(cardIndex));
                                 playerMana.playerOneMana -= playerOneHand.getMana(cardIndex, objectMapper);
                                 playerOneHand.cardArrayList.remove(cardIndex);
-
+                                
                             }
                         } else {
                             // player 2
@@ -215,7 +216,6 @@ public class GameLogic {
                                 break;
                             }
                             // TODO check whether if condition does anything (see invalid tests)
-                            System.out.println(playerTwoHand.getName(cardIndex, objectMapper));
                             if (isCardOnFrontRow(playerTwoHand.cardArrayList.get(cardIndex)) == true) {
                                 table.get(1).add(playerTwoHand.cardArrayList.get(cardIndex));
                                 playerMana.playerTwoMana -= playerTwoHand.getMana(cardIndex, objectMapper);
@@ -254,6 +254,8 @@ public class GameLogic {
                         jsonNode = objectMapper.createObjectNode();
                         jsonNode.put("command", "getCardsOnTable");
                         output.add(jsonNode);
+                        Table tableInstance = new Table();
+                        output.add(tableInstance.getCardsOnTable(table, objectMapper));
                         break;
                 }
             }
