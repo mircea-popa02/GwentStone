@@ -1,0 +1,181 @@
+[ {
+  "command" : "getCardAtPosition",
+  "x" : 0,
+  "y" : 3,
+  "output" : "No card available at that position."
+}, {
+  "command" : "cardUsesAttack",
+  "cardAttacker" : {
+    "x" : 0,
+    "y" : 0
+  },
+  "cardAttacked" : {
+    "x" : 3,
+    "y" : 0
+  },
+  "error" : "Attacker card is frozen."
+}, {
+  "command" : "cardUsesAttack",
+  "cardAttacker" : {
+    "x" : 0,
+    "y" : 1
+  },
+  "cardAttacked" : {
+    "x" : 3,
+    "y" : 0
+  },
+  "error" : "Attacker card is frozen."
+}, {
+  "command" : "getCardAtPosition",
+  "x" : 3,
+  "y" : 0,
+  "output" : {
+    "mana" : 2,
+    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+    "colors" : [ "Yellow", "White" ],
+    "name" : "Disciple",
+    "health" : 4,
+    "attackDamage" : 0
+  }
+}, {
+  "command" : "getCardsInHand",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 2,
+    "description" : "Standard card: Thrown from the highest cliff, revenge will be his glory.",
+    "colors" : [ "Black", "White", "Red" ],
+    "name" : "The Cursed One",
+    "health" : 3,
+    "attackDamage" : 0
+  } ]
+}, {
+  "command" : "getPlayerMana",
+  "output" : 4,
+  "playerIdx" : 2
+}, {
+  "command" : "getPlayerTurn",
+  "output" : 2
+}, {
+  "command" : "getCardAtPosition",
+  "x" : 0,
+  "y" : 0,
+  "output" : {
+    "mana" : 3,
+    "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
+    "colors" : [ "Yellow", "White" ],
+    "name" : "Disciple",
+    "health" : 4,
+    "attackDamage" : 0
+  }
+}, {
+  "command" : "cardUsesAttack",
+  "cardAttacker" : {
+    "x" : 0,
+    "y" : 1
+  },
+  "cardAttacked" : {
+    "x" : 2,
+    "y" : 0
+  },
+  "error" : "Attacker card has already attacked this turn."
+}, {
+  "command" : "cardUsesAttack",
+  "cardAttacker" : {
+    "x" : 0,
+    "y" : 1
+  },
+  "cardAttacked" : {
+    "x" : 2,
+    "y" : 0
+  },
+  "error" : "Attacker card has already attacked this turn."
+}, {
+  "command" : "cardUsesAttack",
+  "cardAttacker" : {
+    "x" : 0,
+    "y" : 0
+  },
+  "cardAttacked" : {
+    "x" : 0,
+    "y" : 1
+  },
+  "error" : "Attacked card does not belong to the enemy."
+}, {
+  "command" : "getPlayerMana",
+  "output" : 13,
+  "playerIdx" : 2
+}, {
+  "command" : "getPlayerMana",
+  "output" : 12,
+  "playerIdx" : 1
+}, {
+  "command" : "getCardsOnTable",
+  "output" : [ [ {
+    "mana" : 3,
+    "description" : "Standard card: Everything is sacred to him, all is but a gift from the saints.",
+    "colors" : [ "Yellow", "White" ],
+    "name" : "Disciple",
+    "health" : 4,
+    "attackDamage" : 0
+  }, {
+    "mana" : 1,
+    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
+    "colors" : [ "Black", "Grey", "Blue" ],
+    "name" : "Sentinel",
+    "health" : 3,
+    "attackDamage" : 2
+  }, {
+    "mana" : 2,
+    "description" : "Standard card: Thrown from the highest cliff, revenge will be his glory.",
+    "colors" : [ "Black", "White", "Red" ],
+    "name" : "The Cursed One",
+    "health" : 1,
+    "attackDamage" : 0
+  } ], [ ], [ {
+    "mana" : 4,
+    "description" : "Premium card: No matter how many, his body will fight. Save your breath for the Mountain is strong.",
+    "colors" : [ "Red", "Purple" ],
+    "name" : "Goliath",
+    "health" : 7,
+    "attackDamage" : 2
+  } ], [ {
+    "mana" : 2,
+    "description" : "Premium card: The will of Gods has been spoken, obey and you shall be saved...or not.",
+    "colors" : [ "Green", "Yellow", "Blue" ],
+    "name" : "Disciple",
+    "health" : 4,
+    "attackDamage" : 0
+  } ] ]
+}, {
+  "command" : "getCardsInHand",
+  "playerIdx" : 2,
+  "output" : [ {
+    "mana" : 1,
+    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+    "colors" : [ "White", "Grey", "Black" ],
+    "name" : "Winterfell"
+  }, {
+    "mana" : 1,
+    "description" : "Premium card: Fear him. Your last breath is now.",
+    "colors" : [ "Red", "Blue", "Pink" ],
+    "name" : "Berserker",
+    "health" : 2,
+    "attackDamage" : 3
+  } ]
+}, {
+  "command" : "getCardsInHand",
+  "playerIdx" : 1,
+  "output" : [ {
+    "mana" : 1,
+    "description" : "Standard card: The days are cold and so are we. We hope we can close our eyes again.",
+    "colors" : [ "White", "Blue" ],
+    "name" : "Winterfell"
+  }, {
+    "mana" : 1,
+    "description" : "Standard card: Trained by the best, nothing will catch him off-guard.",
+    "colors" : [ "Black", "White" ],
+    "name" : "Sentinel",
+    "health" : 2,
+    "attackDamage" : 2
+  } ]
+} ]
