@@ -1,15 +1,13 @@
 package logic;
 
-public class PlayerMana {
-    public int playerOneMana;
-    public int playerTwoMana;
+final class PlayerMana {
+  public int playerOneMana;
+  public int playerTwoMana;
+  public int givenMana;
 
-    public int  givenMana;
-
-    public PlayerMana() {
-        playerOneMana = 1;
-        playerTwoMana = 1;
-        givenMana = 1;
-    }
-
+  PlayerMana() {
+    playerOneMana = 1;
+    playerTwoMana = 1;
+    givenMana = 1;
+  }
 }

@@ -3,35 +3,35 @@ package fileio;
 import java.util.ArrayList;
 
 public final class GameInput {
-        private StartGameInput startGame;
-        private ArrayList<ActionsInput> actions;
+  private StartGameInput startGame;
+  private ArrayList<ActionsInput> actions;
 
-        public GameInput() {
-        }
+  public GameInput() {
+  }
 
-        public StartGameInput getStartGame() {
-                return startGame;
-        }
+  public StartGameInput getStartGame() {
+    return startGame;
+  }
 
-        public void setStartGame(final StartGameInput startGame) {
-                this.startGame = startGame;
-        }
+  public void setStartGame(final StartGameInput startGame) {
+    this.startGame = startGame;
+  }
 
-        public ArrayList<ActionsInput> getActions() {
-                return actions;
-        }
+  public ArrayList<ActionsInput> getActions() {
+    return actions;
+  }
 
-        public void setActions(final ArrayList<ActionsInput> actions) {
-                this.actions = actions;
-        }
+  public void setActions(final ArrayList<ActionsInput> actions) {
+    this.actions = actions;
+  }
 
-        @Override
-        public String toString() {
-                return "GameInput{"
-                        +  "startGame="
-                        + startGame
-                        + ", actions="
-                        + actions
-                        + '}';
-        }
+  @Override
+  public String toString() {
+    return "GameInput{"
+            + "startGame="
+            + startGame
+            + ", actions="
+            + actions
+            + '}';
+  }
 }

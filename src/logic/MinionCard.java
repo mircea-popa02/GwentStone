@@ -3,32 +3,39 @@ package logic;
 
 import java.util.ArrayList;
 
-public class MinionCard extends GenericCard {
-    public int mana;
-    public int health;
-    public int attackDamage;
-    public String description;
-    public ArrayList<String> colors ;
-    public String name;
+final class MinionCard extends GenericCard {
+  public int mana;
+  public int health;
+  public int attackDamage;
+  public String description;
+  public ArrayList<String> colors;
+  public String name;
 
-    public MinionCard(int mana, int health, int attackDamage, String description, ArrayList<String> colors, String name) {
-        this.mana = mana;
-        this.health = health;
-        this.attackDamage = attackDamage;
-        this.description = description;
-        this.colors = colors;
-        this.name = name;
-    }
+  MinionCard(final int mana, final int health, final int attackDamage,
+                    final String description, final ArrayList<String> colors, final String name) {
+    this.mana = mana;
+    this.health = health;
+    this.attackDamage = attackDamage;
+    this.description = description;
+    this.colors = colors;
+    this.name = name;
+  }
 
-    @Override
-    public void attackCard(int damage) {
-        this.health -= damage;
-    }
+  /**
+   * Subtracts health from card
+   * @param damage amount of damage given to card
+   */
+  @Override
+  public void attackCard(final int damage) {
+    this.health -= damage;
+  }
 
-    @Override
-    public void weakness(int atk) {
-        System.out.println(attackDamage + " before");
-        this.attackDamage -= atk;
-        System.out.println(attackDamage + " after");
-    }
+  /**
+   * Applies Weak Knees effect to a card
+   * @param atk amount of attack removed from card
+   */
+  @Override
+  public void weakness(final int atk) {
+    this.attackDamage -= atk;
+  }
 }
