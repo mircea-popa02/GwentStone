@@ -52,6 +52,6 @@ To conclude, the implementation handles most types of commands, but does not
 account for some invalid inputs and errors. The time spent for this homework
 is around 36 hours.
 
-####**GitHub link**: https://github.com/mircea-popa02/GwentStone
+**GitHub link**: https://github.com/mircea-popa02/GwentStone
 
 *The repository will be made public after the hard deadline
