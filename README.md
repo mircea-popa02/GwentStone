@@ -1,5 +1,5 @@
 # GwentStone 
-###*Popa Mircea 323CD*
+*Popa Mircea 323CD*
 
 
 ## 📝 Table of Contents
