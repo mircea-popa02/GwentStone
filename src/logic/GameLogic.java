@@ -487,7 +487,6 @@ public class GameLogic {
             TableCoordinates attacker = new TableCoordinates(inputData.getGames().get(i).
                     getActions().get(j).getCardAttacker());
 
-            // TODO add errors
             if (table.get(attacker.x).size() > attacker.y) {
               if (((MinionCard) table.get(attacker.x).get(attacker.y)).name.equals("The Ripper")) {
 
@@ -558,7 +557,6 @@ public class GameLogic {
             break;
 
           case "useHeroAbility":
-            // TODO add errors
             affectedRow = inputData.getGames().get(i).getActions().get(j).getAffectedRow();
             if (turn == 1) {
               if (playerOneHero.name.equals("Lord Royce")) {
@@ -685,7 +683,6 @@ public class GameLogic {
     }
     return false;
   }
-
 
   private void attackError(final TableCoordinates attacked, final TableCoordinates attacker,
                            final String error)

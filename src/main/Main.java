@@ -69,8 +69,7 @@ public final class Main {
             Input.class);
 
     ArrayNode output = objectMapper.createArrayNode();
-
-    //TODO add here the entry point to your implementation
+    // entry point to implementation
     GameLogic gameLogic = new GameLogic(inputData, output, objectMapper);
     gameLogic.playGames();
 
