@@ -1,13 +1,10 @@
 # GwentStone 
-*Popa Mircea 323CD*
-
 
 ## 📝 Table of Contents
 #### [Intro](#intro)
 #### [Description](#description)
 #### [Implementation](#implementation)
 #### [Conclusion](#conclusion)
-
 
 ## Intro <a name = "intro"></a>
 The task was to implement a static, terminal-based card game between two
@@ -51,7 +48,3 @@ is modified accordingly after using cards abilities or at the end of a round.
 To conclude, the implementation handles most types of commands, but does not
 account for some invalid inputs and errors. The time spent for this homework
 is around 36 hours.
-
-**GitHub link**: https://github.com/mircea-popa02/GwentStone
-
-*The repository will be made public after the hard deadline
